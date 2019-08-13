@@ -96,7 +96,7 @@ This solution is more efficient if intended for a single user, or if the calls m
 
 A restful api was built to query a task for its priority and task owner. The api can be accessed by the /api/ prefix followed by the task id.
 
-## the how
+How this is done:
 In our urls.py file we map anything prefixed by /api/ onto a variable called task_id. This is passed onto views.py which processes the GET call:
 
 urls.py
