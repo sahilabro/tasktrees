@@ -89,13 +89,14 @@ def recurseChild(ChildTasks, parentTask):
 
 Please note that while this is a good solution for occasional use, it is bad if multiple users make calls at the same time, as the function creates update and save SQL queries to the backend for each call. A query scheduler would have to be implemented if the table were to be viewed frequently by multiple users.
 
-This solution is more efficient if intended for a single user, or if the calls made are spaced apart as it eliminated the need for a scheduler.
+This solution is more efficient if intended for a single user, or if the calls made are spaced apart as it eliminates the need for a scheduler.
 
 
 ## RESTful API
 
 A restful api was built to query a task for its priority and task owner. The api can be accessed by the /api/ prefix followed by the task id.
 
+## the how
 In our urls.py file we map anything prefixed by /api/ onto a variable called task_id. This is passed onto views.py which processes the GET call:
 
 urls.py
