@@ -1,0 +1,28 @@
+<table class='table table-dark table-striped table-hover'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <thead class="thead-light">
+    <tr>
+        <th>id</th>
+        <th>Name</th>
+        <th>Status</th>
+        <th>Start date</th>
+        <th>End date</th>
+        <th>Parent</th>
+        <th>Priority</th>
+        <th>Task Owner</th>
+    </tr>
+    </thead>
+    {% for item in Task %}
+    <tr> 
+        <td>{{item.id}}</td>
+        <td>{{item.Name}}</td>
+        <td>{{item.Status}}</td>
+        <td>{{item.StartDate}}</td>
+        <td>{{item.EndDate}}</td>
+        <td>{{item.P}}</td>
+        <td>{{item.priority}}</td>
+        <td>{{item.taskowner}}</td>
+    </tr>
+    {% endfor %}
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</table>
