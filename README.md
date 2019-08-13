@@ -2,7 +2,7 @@
 
 TaskTrees is a task browser built with the django framework.
 Each task has the following attributes
-```yaml
+
     - id = Each Task has a unique id. uuid was used to generate unique hash values for each task
     - Start Date = Scheduled start date and time for the given task
     - End Date = Scheduled finish time for given task
@@ -10,7 +10,7 @@ Each task has the following attributes
     - Parent = Parent task, if the task is a sub task of another task
     - Task owner = Task owned by which person
     - Priority = Task Priority
-```
+
 The framework displays a table of all tasks on a rendered web-page.
 
 Given DB has following tree structure
@@ -54,6 +54,7 @@ A parent task status can be:
     - Idle: If no sub tasks are running, but one or more are scheduled, and one or more are completed
 
 The status of tasks with no sub tasks is called an actual task. An actual task cannot be 'idle,' it can be one of the following:
+
     - Scheduled
     - Running
     - Completed
