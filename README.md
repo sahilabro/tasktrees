@@ -13,7 +13,7 @@ Each task has the following attributes
 
 The framework displays a table of all tasks on a rendered web-page.
 
-Given DB has following tree structure
+Our test data tasks have following tree structure. Please note that they are all stored in the given sqlite DB file. We only use one table for all tasks, parent or not. We use recursion for processing, justification given in later section.
 ```yaml
 Task A:
     Task A1
